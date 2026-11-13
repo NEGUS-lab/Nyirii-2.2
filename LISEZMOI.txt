@@ -1,0 +1,15 @@
+NYIRIICOLLECT 2.2 : APPLICATION LOCALE (APK) + SERVEUR GOOGLE
+
+A. CONSTRUIRE L'APK (une fois, sans Android Studio)
+   1. Créer un compte gratuit sur github.com, puis un nouveau dépôt (New repository), nom : nyiriicollect.
+   2. Décompresser ce zip sur un ordinateur. Dans le dépôt : Add file > Upload files, glisser TOUT le contenu
+      (dossier www, dossier .github, package.json, capacitor.config.json...) puis Commit changes.
+   3. Onglet Actions > « Construire l'APK » > Run workflow. Attendre environ 5 à 8 minutes (coche verte).
+   4. Ouvrir l'exécution terminée > Artifacts > NyiriiCollect-2.2-apk : télécharger, décompresser, récupérer app-debug.apk.
+B. INSTALLER : copier app-debug.apk sur le téléphone, l'ouvrir, autoriser « sources inconnues ». Aucune connexion requise.
+C. AVANT TOUT : exporter les fiches de l'ancienne application (stockage séparé : elles ne passent pas dans la 2.2).
+D. EXPORT : « Exporter les fiches » crée le fichier puis ouvre le partage (WhatsApp, Drive, Enregistrer...).
+   Exporter régulièrement : si l'application est désinstallée, les fiches non exportées et non synchronisées sont perdues.
+E. SERVEUR GOOGLE (facultatif) : voir Code.gs ; saisir l'URL /exec et la clé dans Réglages sur chaque téléphone.
+F. MISE A JOUR du questionnaire : modifier www/questions.js sur GitHub, relancer le workflow, réinstaller l'APK
+   par-dessus (même application : les fiches sont conservées).
